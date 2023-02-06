@@ -19,7 +19,9 @@ signUp.addEventListener('click' , ()=>{
                 emailHelp.style.display = 'none'
 
             if(localStorage.getItem('password') == password.value ){
-                window.open('http://127.0.0.1:5500/index.html')
+                form.setAttribute('method', 'get')
+                form.setAttribute('action', '/index.html')
+                // window.open('./index.html')
             }
                 
              }else{
