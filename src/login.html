@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome</title>
+    <style>
+        #status{
+            text-align: center;
+            font-size: 30px;
+            animation: changecolor 4s infinite alternate ease-in-out;
+        }
+        @keyframes changecolor {
+            25%{
+                color: red;
+                transform: translateX(100px);
+            }
+            50%{
+                color: blue;
+            }
+            75%{
+                color: green;
+                transform: translateX(-100px);
+            }
+            100%{
+                color: yellow;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container-fluid bg-primary d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <p id="status">
+            Welcome In Your Page
+        </p>
+    </div>
+
+    <script src="./script.js"></script>  
+</body>
+</html>
